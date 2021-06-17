@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/l"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AppAdaptador">
+
+    <TextView
+        android:id="@+id/txtTrabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Trabajo:"
+        app:layout_constraintEnd_toEndOf="@+id/txtDireccion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtDireccion"
+        app:layout_constraintTop_toBottomOf="@+id/txtDireccion" />
+
+    <TextView
+        android:id="@+id/txtDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Dni:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Nombre:"
+        app:layout_constraintEnd_toEndOf="@+id/txtDni"
+        app:layout_constraintStart_toStartOf="@+id/txtDni"
+        app:layout_constraintTop_toBottomOf="@+id/txtDni" />
+
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Sexo: "
+        app:layout_constraintEnd_toEndOf="@+id/txtNombre"
+        app:layout_constraintStart_toStartOf="@+id/txtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <TextView
+        android:id="@+id/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Direccion: "
+        app:layout_constraintEnd_toEndOf="@+id/txtSexo"
+        app:layout_constraintStart_toStartOf="@+id/txtSexo"
+        app:layout_constraintTop_toBottomOf="@+id/txtSexo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

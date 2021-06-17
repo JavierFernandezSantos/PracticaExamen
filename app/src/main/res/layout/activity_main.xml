@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppPrincipal">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedorFragmento"
+        android:name="com.example.practicaexamen.FragmentoActividad"
+        android:layout_width="347dp"
+        android:layout_height="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickSMS"
+        android:text="Sms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btLlamar"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/btLlamar"
+        app:layout_constraintTop_toBottomOf="@+id/btLlamar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btLlamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="clickCall"
+        android:text="Llamar"
+        app:layout_constraintEnd_toEndOf="@+id/btWeb"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btWeb"
+        app:layout_constraintTop_toBottomOf="@+id/btWeb" />
+
+    <Button
+        android:id="@+id/btWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="clickWeb"
+        android:text="Web"
+        app:layout_constraintEnd_toEndOf="@+id/txtPalabra"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="@+id/txtPalabra"
+        app:layout_constraintTop_toBottomOf="@+id/txtPalabra" />
+
+    <Button
+        android:id="@+id/btUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="clickUsuarios"
+        android:text="Usuarios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPalabra"
+        android:layout_width="134dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/btUsuario"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/btUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/btUsuario" />
+</androidx.constraintlayout.widget.ConstraintLayout>
